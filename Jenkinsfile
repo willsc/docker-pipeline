@@ -19,7 +19,7 @@ pipeline {
 
         stage('Build') {
             steps {
-               sh '/usr/bin/sudo docker build -t foo .'
+               sh 'docker build -t foo .'
             }
         }
         stage('Test') {
