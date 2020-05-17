@@ -6,7 +6,7 @@ pipeline {
              def dockerHome = tool 'Docker'
              env.PATH = "${dockerHome}/bin:${env.PATH}"
           }   
-       }
+       
         stage('checkout') {
             steps {
                 checkout scm
@@ -28,4 +28,6 @@ pipeline {
             }
         }
     }
+  }
 }
+
