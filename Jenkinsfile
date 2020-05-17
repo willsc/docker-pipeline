@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Initialize') {
             steps  {
-             def dockerHome = tool 'Docker'
+             def dockerHome = tool 'Dockertools'
              env.PATH = "${dockerHome}/bin:${env.PATH}"
             } 
         }  
